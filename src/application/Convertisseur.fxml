@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="258.0" prefWidth="457.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ConvertisseurController">
+   <children>
+      <TabPane prefHeight="258.0" prefWidth="457.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab fx:id="dist" text="Distance">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ComboBox fx:id="distbox1" layoutX="29.0" layoutY="99.0" onAction="#calculeD" prefWidth="150.0" />
+                        <ComboBox fx:id="distbox2" layoutX="264.0" layoutY="99.0" onAction="#calculeD" prefWidth="150.0" />
+                        <TextField fx:id="disttxt1" layoutX="24.0" layoutY="41.0" onKeyReleased="#calculeD" text="1" />
+                        <TextField fx:id="disttxt2" layoutX="259.0" layoutY="41.0" onKeyReleased="#calculeD2" text="1" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab fx:id="argent" text="Argent">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ComboBox fx:id="argentbox1" layoutX="33.0" layoutY="99.0" onAction="#calculeM" prefWidth="150.0" />
+                        <ComboBox fx:id="argentbox2" layoutX="263.0" layoutY="99.0" onAction="#calculeM" prefWidth="150.0" />
+                        <TextField fx:id="argenttxt1" layoutX="28.0" layoutY="40.0" onKeyReleased="#calculeM" text="1" />
+                        <TextField fx:id="argenttxt2" layoutX="258.0" layoutY="40.0" onKeyReleased="#calculeM2" text="1" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab fx:id="weight" text="Masse">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ComboBox fx:id="weightbox1" layoutX="29.0" layoutY="99.0" onAction="#calculeW" prefWidth="150.0" />
+                        <ComboBox fx:id="weightbox2" layoutX="272.0" layoutY="99.0" onAction="#calculeW" prefWidth="150.0" />
+                        <TextField fx:id="weighttxt1" layoutX="24.0" layoutY="43.0" onKeyReleased="#calculeW" text="1" />
+                        <TextField fx:id="weighttxt2" layoutX="267.0" layoutY="43.0" onKeyReleased="#calculeW2" text="1" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
